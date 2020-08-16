@@ -1,7 +1,7 @@
 from sklearn.ensemble import GradientBoostingRegressor
 from flask import Flask,render_template,request
 import pickle
-from joblib import dump, load
+# from joblib import dump, load
 
 app = Flask(__name__)
 lr = pickle.load(open('lr.pkl','rb'))
